@@ -15,8 +15,11 @@ export default function App() {
   }
 
   return (
-    <>
-      <button className="close" onClick={() => setIsOpen(!isOpen)}>
+    <div>
+      <button
+        className="close"
+        onClick={() => setIsOpen((currentState) => !currentState)}
+      >
         &times;
       </button>
 
@@ -48,6 +51,6 @@ export default function App() {
           </div>
         </div>
       )}
-    </>
+    </div>
   );
 }
